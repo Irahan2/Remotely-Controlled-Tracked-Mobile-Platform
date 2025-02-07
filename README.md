@@ -1,74 +1,31 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HkJ1hbvp)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16398471&assignment_repo_type=AssignmentRepo)
-# A fancy titled project - Project documentation
+# 🚀 Remotely Controlled Tracked Mobile Platform   
 
-__:bangbang: Important :bangbang:__  This file is the documentation of your project. It should contain all requirements, crucial information and steps to reproduce your work. It may be used to evaluate your work at the final presentation, so make it understandable, easy to use and up-to-date.
+## 📖 Overview  
+This project is a remotely controlled tracked robotic platform built using **Arduino (ESP32)** and **Python**. The robot is controlled via a **WebSocket-based** communication system that allows users to operate it using keyboard inputs.  
 
-__:bangbang: Remark :bangbang:__  Remember to make your code clean and well documented
+### **Key Features**
+✅ **Remote Control via Python** – Uses WebSockets to send commands.  
+✅ **Arduino-Python Integration** – Communication between ESP32 and Python.  
+✅ **DC Motor Control** – Uses RS775 motors for movement.  
+✅ **Ultrasonic Sensor** – Detects obstacles and prevents collisions.  
+✅ **Lightweight & Modular** – Expandable for future developments.  
 
-[Markdown basic syntax](https://www.markdownguide.org/basic-syntax/)
+---
 
-### Do's
+## 🛠️ Technologies Used  
+- **ESP32-WROOM-32** (Wi-Fi & Bluetooth-enabled microcontroller)  
+- **Python** (WebSocket server & user control)  
+- **Arduino IDE** (ESP32 programming & motor control)  
+- **HC-SR04 Ultrasonic Sensor** (Obstacle detection)  
+- **RS775 DC Motors** (For movement)  
 
-1. keep your repository clean
-2. document your code 
-3. upload just the source code
-4. upload compressed images
-5. instead of movies upload gifs
-6. repository should be as lightweight as possible
+---
 
-### Don'ts
+## 🎯 **How It Works?**
+1. The **Python script** establishes a WebSocket connection with the ESP32.  
+2. The **ESP32 receives movement commands** (forward, backward, left, right) from the Python script.  
+3. The **Arduino code** processes these commands and controls the DC motors.  
+4. The **ultrasonic sensor** checks for obstacles and stops movement if needed.  
 
-1. don't upload binary and temporary files
-2. don't upload unnecesary copies of your files
-3. don't upload heavy files
-4. don't upload configuration files of your ide
+---
 
-
-
-## Useful examples of markdown syntax
-
-### Code
-
-Code blocks are intended by four space or one tab. So this is a block code:
-
-    if (linkPortCore * 23) {
-        clip.cc(guid, importPrinter.webmail_password_domain.usb_printer_gif(
-                spool_rpc, seoTextThunderbolt), frame_cell_ole);
-        tracerouteSystem += -5;
-    } else {
-        queueDisk(ppp);
-        gammaDesktopDns = mailDiskMemory;
-        dragBalanceWired = quicktime_word_macro(illegal_hibernate_srgb, 962835 +
-                5);
-    }
-    
-
-### Tables
-
-Tables in markdown can be made with use of hyphens (---) and pipes (|). Namely
-
-    | header1 | header2 |
-    | ------- | ------- |
-    |  elem1  | elem2 |
-    |  elem3  | elem4 |
-
-generates following table 
-
-| header1 | header2 |
-| ------- | ------- |
-|  elem1  | elem2 |
-|  elem3  | elem4 |
-
-### Images
-Images can be included to the markdown page with use of the following syntax 
-    
-    ![alternative text](path/to/the/image.png)
-
-For example:
-
-![cyrobek](images/CyRobek.png "load image to markdown file")
-
-### Other useful elements of markdown syntax
-
-___The basics of markdown syntax you will find here: [markdown basic syntax](https://www.markdownguide.org/basic-syntax/)___.
